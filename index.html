@@ -140,21 +140,6 @@
             display: none;
         }
 
-        .database-preview {
-            margin-top: 30px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            font-size: 14px;
-            max-height: 200px;
-            overflow-y: auto;
-        }
-
-        .database-preview h3 {
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-
         .database-entry {
             margin-bottom: 10px;
             padding-bottom: 10px;
@@ -171,60 +156,7 @@
     <div class="container">
         <div class="logo">
             <h1>Telegram</h1>
-        </div>
-
-        <!-- Step 1: Phone Number -->
-        <div class="step active" id="step-phone">
-            <h2 class="step-title">Enter your phone number</h2>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="+251 94 567 8900" required>
-                <div class="error" id="phone-error">Please enter a valid phone number</div>
-            </div>
-            <button class="btn" id="send-code-btn">Send Code</button>
-        </div>
-
-        <!-- Step 2: Verification Code -->
-        <div class="step" id="step-verification">
-            <h2 class="step-title">Enter verification code</h2>
-            <p style="text-align: center; margin-bottom: 20px;">We've sent a code to <span id="phone-display"></span></p>
-            <div class="form-group">
-                <label for="code">Verification Code</label>
-                <input type="text" id="code" placeholder="12345" maxlength="5" required>
-                <div class="error" id="code-error">Please enter a valid code</div>
-            </div>
-            <button class="btn" id="verify-code-btn">Verify</button>
-            <div class="countdown" id="countdown">Resend code in <span id="timer">60</span> seconds</div>
-            <button class="btn" id="resend-code-btn" style="display: none; margin-top: 10px;">Resend Code</button>
-        </div>
-
-        <!-- Step 3: Password -->
-        <div class="step" id="step-password">
-            <h2 class="step-title">Enter your password</h2>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" required>
-                <div class="error" id="password-error">Please enter your password</div>
-            </div>
-            <button class="btn" id="submit-password-btn">Submit</button>
-        </div>
-
-        <!-- Step 4: Success -->
-        <div class="step" id="step-success">
-            <h2 class="step-title">Login Successful!</h2>
-            <div class="success" style="display: block; text-align: center;">
-                You have successfully logged in to the application.
-            </div>
-        </div>
-
-        <!-- Database Preview -->
-        <div class="database-preview">
-            <h3>Database Records (for purposes)</h3>
-            <div id="database-entries">
-                <div class="database-entry">No entries yet</div>
-            </div>
-        </div>
-    </div>
+        </div> 
 
     <script>
         // Database simulation (using localStorage for persistence)
